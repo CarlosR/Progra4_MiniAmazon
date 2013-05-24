@@ -42,8 +42,8 @@ namespace MiniAmazon.Web.Controllers
             var fb = new FacebookClient();
             var loginUrl = fb.GetLoginUrl(new
             {
-                client_id = "166603383506329",
-                client_secret = "594078c31b94648e3e05e714fb578689",
+                client_id = "149230631928363",
+                client_secret = "6b0f80760689f64741cdd68dd135c3b4",
                 redirect_uri = RedirectUri.AbsoluteUri,
                 response_type = "code",
                 scope = "email" // Add other permissions as needed
@@ -57,8 +57,8 @@ namespace MiniAmazon.Web.Controllers
             var fb = new FacebookClient();
             dynamic result = fb.Post("oauth/access_token", new
             {
-                client_id = "166603383506329",
-                client_secret = "594078c31b94648e3e05e714fb578689",
+                client_id = "149230631928363",
+                client_secret = "6b0f80760689f64741cdd68dd135c3b4",
                 redirect_uri = RedirectUri.AbsoluteUri,
                 //code = code
             });
